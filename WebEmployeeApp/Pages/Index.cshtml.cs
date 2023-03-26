@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
 
 namespace WebEmployeeApp.Pages
 {
@@ -12,9 +13,30 @@ namespace WebEmployeeApp.Pages
             _logger = logger;
         }
 
+        [BindProperty]
+        public string Username { get; set; }
+
+        [BindProperty]
+        public string Password { get; set; }  
         public void OnGet()
         {
 
+        }
+
+
+        //Implement Login Logic to direct the user to correct webpage based on user credentials
+        public IActionResult OnPost()
+        {
+      
+            if (Username == "admin" && Password == "admin")
+            {
+                return RedirectToPage("admin");
+            }
+            else
+            {
+                ModelState.AddModelError("", "Invalid Username or Password");
+                return Page();
+            }
         }
     }
 }
