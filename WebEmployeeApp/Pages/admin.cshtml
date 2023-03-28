@@ -5,4 +5,35 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>This is admin access</p>
+<button type="button" class="btn btn-outline-info">New Employee</button>
+<button type="button" class="btn btn-outline-danger">Delete Employee</button>
+
+    
+    <form id="EmployeeSearch">
+        <h3>Employee Search</h3>
+            <div class="form-group">
+                <label for="employeeIDinput" class="form-label mt-4">Employee ID</label>
+                <input type="text" class="form-control" id="employeeIDinput" placeholder="12345">
+            </div>
+
+            <div class="form-group">
+                <label for="employeeFirstNameinput" class="form-label mt-4">Employee Name</label>
+                <input type="text" class="form-control" id="employeeFirstNameinput" placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="employeeLastNameinput" class="form-label mt-4">Employee Name</label>
+                <input type="text" class="form-control" id="employeeLastNameinput" placeholder="John Doe">
+            </div>
+
+    <button type="button" class="btn btn-outline-primary">Search</button>
+        <div class="form-group">
+            <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
+            <select multiple="" class="form-select" id="exampleSelect2">
+                <option>1</option>
+                <option>2</option>
+            </select>
+
+        <button type="button" class="btn btn-outline-success">Select</button>
+        </div>
+    </form>

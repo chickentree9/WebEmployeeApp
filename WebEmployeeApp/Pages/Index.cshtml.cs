@@ -28,10 +28,11 @@ namespace WebEmployeeApp.Pages
         public IActionResult OnPost()
         {
       
-            if (Username == "admin" && Password == "admin")
+            if (Username == "worker" && Password == "worker")
             {
-                return RedirectToPage("admin");
+                return RedirectToPage("Worker");
             }
+
             else
             {
                 ModelState.AddModelError("", "Invalid Username or Password");

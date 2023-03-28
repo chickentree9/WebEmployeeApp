@@ -13,7 +13,10 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-  background-color:darkcyan;
+
+#EmployeeSearch{
+margin-bottom: 300px;
 }
+
+
+

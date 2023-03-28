@@ -1,21 +1,33 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
 }
-
+<body>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h2> Please Login </h2>
+    <h1 class="display-4">Robert Jaklin Capstone</h1>
  <form method=post>
+ 
      <div>
+         <h3>Please Login</h3>
          <p>Username</p>
          <input type="text" id="username" name="username" asp-for="Username" />
          <br />
          <p>Password</p>
          <input type="text" id="password" name="password" asp-for="Password" />
 <br />
+<br />
 <button type="submit">Login</button>
      </div>
+
  </form>
 </div>
+    <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Reminder</div>
+        <div class="card-body">
+            <h4 class="card-title">Login Reference</h4>
+            <p class="card-text">
+                For quick reference for logins. For Admin access username and password are admin.
+                For HR access username is hr and password is hr. For worker access username is worker and password is worker.
+        </div>
+    </div>
+</body>

@@ -1,0 +1,30 @@
+﻿@page
+@model WebEmployeeApp.Pages.WorkerModel
+@{
+    ViewData["Title"] = "Worker Access";
+}
+<body>
+<h1> Worker Access</h1>
+
+    <form id="timeCardForm" runat="server">
+        <div class="text-center">
+            <h1>Timecard</h1>
+            <div>
+                <label for="date">Date:</label>
+
+                <asp:TextBox ID="date" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <label for="startTime">Start Time:</label>
+                <asp:TextBox ID="startTime" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <label for="endTime">End Time:</label>
+                <asp:TextBox ID="endTime" runat="server"></asp:TextBox>
+            </div>
+
+            <asp:Button ID="submit" runat="server" Text="Submit" OnClick="submit_Click" />
+            <asp:Label ID="result" runat="server" Visible="false"></asp:Label>
+        </div>
+    </form>
+</body>
