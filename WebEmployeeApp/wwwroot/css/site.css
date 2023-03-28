@@ -15,7 +15,17 @@ html {
 
 
 #EmployeeSearch{
-margin-bottom: 300px;
+margin-bottom: 50px;
+}
+
+header{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#timeCardForm{
+
+    margin-bottom:50px;
 }
 
 

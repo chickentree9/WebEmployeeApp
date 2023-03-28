@@ -3,13 +3,23 @@
 @{
     ViewData ["Title"] = "HR Access";
 }
+<header>
+
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" checked="" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck1">Employee Search</label>
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck2">Account Info</label>
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck3">Track Field Worker</label>
+    </div>
+</header>
 <body>
 <h1> HR Access </h1>
 
-        <h2>You can update employee information here</h2>
-
         <form id="EmployeeSearch">
 
+        <legend>Employee Search:</legend>
             <div class="form-group">
                 <label for="employeeIDinput" class="form-label mt-4">Employee ID</label>
                 <input type="text" class="form-control" id="employeeIDinput" placeholder="12345">
@@ -17,41 +27,41 @@
 
             <div class="form-group">
                 <label for="employeeFirstNameinput" class="form-label mt-4">Employee Name</label>
-                <input type="text" class="form-control" id="employeeFirstNameinput" placeholder="John Doe">
+                <input type="text" class="form-control" id="employeeFirstNameinput" placeholder="John">
             </div>
 
             <div class="form-group">
                 <label for="employeeLastNameinput" class="form-label mt-4">Employee Name</label>
-                <input type="text" class="form-control" id="employeeLastNameinput" placeholder="John Doe">
+                <input type="text" class="form-control" id="employeeLastNameinput" placeholder="Doe">
             </div>
 
             <div class="form-group">
                 <label for="employeeEmailinput" class="form-label mt-4">Employee Email</label>
-                <input type="text" class="form-control" id="employeeEmailinput" placeholder="John Doe">
+                <input type="text" class="form-control" id="employeeEmailinput" placeholder="johnDoe@email.com"/>
             </div>
             
            <div class="form-group">
                 <label for="employeePhoneinput" class="form-label mt-4">Employee Phone</label>
-                <input type="text" class="form-control" id="employeePhoneinput" placeholder="John Doe">
+                <input type="text" class="form-control" id="employeePhoneinput" placeholder="123456789" />
            </div>
            
           <div class="form-group">
                     <label for="employeePositioninput" class="form-label mt-4">Employee Position</label>
-                    <input type="text" class="form-control" id="employeePositioninput" placeholder="John Doe">
+                    <input type="text" class="form-control" id="employeePositioninput" placeholder="Worker,Admin,HR" />
           </div>
-
-        <div class="form-group">
-            <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
-            <select multiple="" class="form-select" id="exampleSelect2">
-                <option>1</option>
-                <option>2</option>
-            </select>
-        </div>
-        <br/>
-        <br/>
-
+        <br />
         <button type="button" class="btn btn-outline-primary text-center">Search</button>
         <button type="button" class="btn btn-outline-secondary text-center">Reset</button>
+
+        <div class="form-group">
+            <label for="searchList" class="form-label mt-4">Search List</label>
+            <select multiple="" class="form-select" id="searchList">
+              
+            </select>
+        </div>
+       
+        <br/>
+
         <button type="button" class="btn btn-outline-success text-center">Select</button>
         </form>
 

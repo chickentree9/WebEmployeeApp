@@ -3,6 +3,16 @@
 @{
     ViewData["Title"] = "Worker Access";
 }
+<header>
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" checked="" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck1">Time Card</label>
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck2">Account Info</label>
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck3">Current Pay Period</label>
+    </div>
+</header>
 <body>
 <h1> Worker Access</h1>
 
@@ -10,21 +20,40 @@
         <div class="text-center">
             <h1>Timecard</h1>
             <div>
-                <label for="date">Date:</label>
-
-                <asp:TextBox ID="date" runat="server"></asp:TextBox>
+                
+                <button type="button" class="btn btn-outline-dark">Start Workday</button>
+                <br />
+                <input class="form-control" id="startTimeinput" type="text" placeholder="Start Time" disabled="">
+                <br />    
             </div>
+            <br/>
+            
             <div>
-                <label for="startTime">Start Time:</label>
-                <asp:TextBox ID="startTime" runat="server"></asp:TextBox>
+               
+                <button type="button" class="btn btn-outline-dark">Start Break</button>
+                <input class="form-control" id="breakTimeinput" type="text" placeholder="Break Time" disabled="">
+                <br />
             </div>
+            <br/>
+            
+          <div>
+               
+                <button type="button" class="btn btn-outline-dark">End Break</button>
+                <input class="form-control" id="breakTimeEndinput" type="text" placeholder="Break Time" disabled="">
+                <br />
+                
+          </div>
+          <br/>
             <div>
-                <label for="endTime">End Time:</label>
-                <asp:TextBox ID="endTime" runat="server"></asp:TextBox>
+                
+                <button type="button" class="btn btn-outline-success">End Workday</button>
+                <input class="form-control" id="endTimeinput" type="text" placeholder="End Time" disabled="">
+                <br />              
             </div>
 
-            <asp:Button ID="submit" runat="server" Text="Submit" OnClick="submit_Click" />
-            <asp:Label ID="result" runat="server" Visible="false"></asp:Label>
         </div>
+        <br/>
+        <button type="button" class="btn btn-outline-primary">Submit</button>
     </form>
+   
 </body>

@@ -4,10 +4,30 @@
     ViewData["Title"] = "Admin Access";
 }
 <h1>@ViewData["Title"]</h1>
+<header>
+
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" checked="" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck1">Admin Search</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck2"> HR Search</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck3">Track Field Worker</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+        <label class="btn btn-primary" for="btncheck3">Account Info</label>
+    </div>
+
+</header>
+
+<br/>
 
 <button type="button" class="btn btn-outline-info">New Employee</button>
 <button type="button" class="btn btn-outline-danger">Delete Employee</button>
 
+<br />
     
     <form id="EmployeeSearch">
         <h3>Employee Search</h3>
@@ -26,10 +46,10 @@
                 <input type="text" class="form-control" id="employeeLastNameinput" placeholder="John Doe">
             </div>
 
-    <button type="button" class="btn btn-outline-primary">Search</button>
+        <button type="button" class="btn btn-outline-primary">Search</button>
         <div class="form-group">
-            <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
-            <select multiple="" class="form-select" id="exampleSelect2">
+            <label for="adminSearchList" class="form-label mt-4">Employee Search</label>
+            <select multiple="" class="form-select" id="adminSearchList">
                 <option>1</option>
                 <option>2</option>
             </select>
