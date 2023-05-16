@@ -5,21 +5,19 @@
 <body>
 <div class="text-center">
     <h1 class="display-4">Robert Jaklin Capstone</h1>
- <form method=post>
- 
-     <div>
-         <h3>Please Login</h3>
-         <p>Username</p>
-         <input type="text" id="username" name="username" asp-for="Username" />
-         <br />
-         <p>Password</p>
-         <input type="text" id="password" name="password" asp-for="Password" />
-<br />
-<br />
-<button type="submit">Login</button>
-     </div>
-
- </form>
+        <div>
+            <h3>Please Login</h3>
+            <form method="post" runat="server">
+                <p>Username</p>
+                <input type="text" asp-for="Username" />
+                <br />
+                <p>Password</p>
+                <input type="password" asp-for="Password" />
+                <br />
+                <br />
+                <button type="submit">Login</button>
+            </form>
+        </div>
 </div>
     <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
         <div class="card-header">Reminder</div>

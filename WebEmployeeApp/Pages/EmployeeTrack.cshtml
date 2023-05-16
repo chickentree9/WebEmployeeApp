@@ -1,0 +1,33 @@
+﻿@page
+@model WebEmployeeApp.Pages.EmployeeTrackModel
+@{
+ViewData ["Title"] = "Employee Tracker";
+    <header>
+        <button type="button" class="btn btn-outline-danger">Go Back</button>
+        <h1>
+            Employee Tracker
+        </h1>
+</header>
+
+<body>
+<form>
+            <button type="button" class="btn btn-outline-success">Track</button>
+            <div class="form-group">
+                <label for="employeeIDinput" class="form-label mt-4">Search by Employee ID</label>
+                <input type="text" class="form-control" id="employeeIDinput" placeholder="0" />
+            </div>
+
+            <div class="form-group">
+                <label for="Latitudeinput" class="form-label mt-4">Latitude</label>
+                <input type="text" class="form-control" id="Latitudeinput" placeholder="0" />
+            </div>
+
+            <div class="form-group">
+                <label for="Longitudeinput" class="form-label mt-4">Longitude</label>
+                <input type="text" class="form-control" id="Longitudeinput" placeholder="0" />
+            </div>
+
+</form>
+
+</body>
+}

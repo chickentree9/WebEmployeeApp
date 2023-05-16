@@ -1,3 +1,22 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "sqlite1": {
+      "type": "sqlite",
+      "connectionId": "ConnectionStrings",
+      "dynamicId": null
+    },
+    "secrets1": {
+      "type": "secrets",
+      "dynamicId": null
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "dbConnectionMain",
+      "dynamicId": null
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "DBConnection"
+    }
+  }
 }
